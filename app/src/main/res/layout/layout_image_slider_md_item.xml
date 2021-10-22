@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="290dp">
+
+        <ImageView
+            android:id="@+id/ivBackgroundImage"
+            android:layout_width="match_parent"
+            android:layout_height="279dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:scaleType="centerInside"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/img_pulses"
+            android:paddingBottom="24dp"
+            />
+</RelativeLayout>

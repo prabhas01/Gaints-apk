@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="173dp"
+    android:layout_height="248dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:layout_marginStart="20dp"
+    app:cardElevation="2dp"
+    android:id="@+id/itemLayout"
+    app:rippleColor="@color/green"
+    app:cardCornerRadius="18dp">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+      <ImageView
+          android:id="@+id/ivGroceryImage"
+          android:layout_width="100dp"
+          android:layout_height="80dp"
+          android:src="@drawable/img_banana"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginTop="26dp"
+          />
+
+        <TextView
+            android:id="@+id/tvGroceryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ivGroceryImage"
+            android:text="Organic Bananas"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/textColorBlackBold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            />
+        <TextView
+            android:id="@+id/tvItemQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:text="7pcs, Priceg"
+            app:layout_constraintTop_toBottomOf="@id/tvGroceryName"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/dark_gray"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:id="@+id/tvItemPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="&#36;4.99"
+            android:textColor="@color/textColorBlackBold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="18dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="21sp"/>
+        <ImageButton
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:src="@drawable/ic_add"
+            app:layout_constraintCircleRadius="10dp"
+           android:background="@drawable/ic_bg_round_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvItemPrice"
+            app:layout_constraintBottom_toBottomOf="@id/tvItemPrice"
+            android:layout_marginEnd="18dp"
+          />
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
